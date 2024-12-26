@@ -1,0 +1,2 @@
+### Introduction To Structural Design Patterns
+Structural design patterns are a type of design pattern that deal with object composition and the structure of classes and objects. They help ensure that when a change is made in one part of a system, it doesn't require changes in other parts. This makes the system more flexible and easier to maintain.
