@@ -21,7 +21,6 @@ interface Coffee {
   description(): string;
 }
 
-// 2 ConcreteComponent implement all the methods of the component interface.
 class SimpleCoffee implements Coffee {
   cost(): number {
     return 10;
@@ -33,8 +32,7 @@ class SimpleCoffee implements Coffee {
 }
 
 
-// 3 Decorator
-abstract class CoffeeDecorator implements Coffee {
+abstract class DecoratorCoffee {
   protected coffee: Coffee;
 
   constructor(coffee: Coffee) {
@@ -51,8 +49,7 @@ abstract class CoffeeDecorator implements Coffee {
 }
 
 
-// 4 ConcreteDecorator
-class MilkDecorator extends CoffeeDecorator {
+class MilkDecorator extends DecoratorCoffee {
   constructor(coffee: Coffee) {
     super(coffee);
   }
