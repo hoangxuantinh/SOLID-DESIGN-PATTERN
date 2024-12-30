@@ -1,3 +1,5 @@
+// cung cấp một lớp trung gian để tổ chức các thành phần phức tạp thành một giao diện đơn giản hơn
+
 class Grinder {
     grindBeans() {
     console.log("Grinding beans...");
